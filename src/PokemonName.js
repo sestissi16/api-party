@@ -43,6 +43,9 @@ class PokemonName extends Component{
                     <h3>Weight of pokemon: {pokemon.weight}</h3>
                     <h3>Base experience gained after defeating {pokemon.name}: {pokemon.base_experience}</h3>    
                 </div>
+                <div className="right-sidebar">
+                    <img src="https://s-media-cache-ak0.pinimg.com/originals/14/a5/d8/14a5d83b23808cbd56fa2583557d6a40.jpg" alt="pokemon picture" />
+                </div>
             </div>
         )
     }
