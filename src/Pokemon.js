@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 
+import PokemonName from './PokemonName'
+
 class Pokemon extends Component{
     state ={
         pokename: '',
@@ -13,7 +15,7 @@ class Pokemon extends Component{
 
     handleSubmit = (ev) => {
         ev.preventDefault()
-        this.props.history.push(`/pokeapi/api/v2/pokemon/${this.state.pokename}`)
+        this.props.history.push(`/pokeapi/${this.state.pokename}`)
     }
 
     render(){
@@ -33,7 +35,7 @@ class Pokemon extends Component{
                 </form>
 
                 <Route exact path='/pokeapi' render={() => <h3>Please enter the name of a Pokemon you want to search</h3>} />
-                <Route path='/pokeapi/api/v2/pokemon/:pokename' render={(props)=><h3>you searched for {props.match.params.pokename}</h3>} />
+                <Route path='/pokeapi/:pokename' component={PokemonName} />
             </div>
         )
     }
