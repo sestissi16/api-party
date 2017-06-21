@@ -3,6 +3,7 @@ import './App.css';
 import { Switch, Route, NavLink } from 'react-router-dom'
 
 import Github from './Github'
+import Pokemon from './Pokemon'
 
 class App extends Component {
   render() {
@@ -17,9 +18,13 @@ class App extends Component {
             <li>
               <NavLink to='/github'>Github API</NavLink>
             </li>
+            <li>
+              <NavLink to='/pokeapi'>Poke API</NavLink>
+            </li>
           </ul>
         </div>
         <Switch>
+          <Route path='/pokeapi' component={Pokemon} />
           <Route path='/github' component={Github} />
           <Route render={() => <p>To get started, click one of the links above</p>} />
         </Switch>
