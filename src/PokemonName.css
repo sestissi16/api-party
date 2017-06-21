@@ -1,0 +1,17 @@
+.pokemon-stats h2{
+    text-transform: uppercase;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch
+}
+
+.pokemon-stats {
+    flex-grow: 1;
+}
+
+.left-sidebar img {
+    width: 400px;
+}
