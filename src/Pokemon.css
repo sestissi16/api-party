@@ -1,0 +1,41 @@
+.pokemon{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.pokemon-logo {
+    width: 100%;
+    max-width: 500px;
+}
+
+.pokemon input {
+    font-family: "Gentium Book Basic", serif;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 10px;
+    font-size: 24px;
+    background-clip: padding-box;
+    border-color: rgba(1, 99, 143,0.25);
+    border-radius: 5px;
+    line-height: 20px;
+    border: 1px solid #d1d5da;
+}
+
+.pokemon button {
+    color:black;
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    border: 2px solid #3A57A9;
+    margin-bottom: 50px;
+    background-color: rgba(254, 202, 4, 0.7);
+    font-family: "Gentium Book Basic", serif;
+}
+
+.pokemon button:hover {
+    background-color: rgba(254, 202, 4, 1);
+    border: 1px solid #3A57A9;
+    box-shadow: 0px 5px rgba(0,0,0,1);
+}

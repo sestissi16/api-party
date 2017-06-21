@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
+import './Pokemon.css'
 
 import PokemonName from './PokemonName'
 
@@ -20,13 +21,19 @@ class Pokemon extends Component{
 
     render(){
         return(
-            <div className="Pokemon">
+            <div className="pokemon">
+                <img 
+                    className="pokemon-logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2000px-International_Pok%C3%A9mon_logo.svg.png" 
+                    alt="pokemon logo" 
+                />
                 <form onSubmit={this.handleSubmit}>
                     <div>
                         <input
                             type="text"
                             value={this.state.pokename}
                             onChange={this.handleChange}
+                            autoFocus
                         />
                     </div>
                     <div>

@@ -19,7 +19,7 @@ class PokemonName extends Component{
     fetchPokemonData = (props) =>{
         fetch(`http://pokeapi.co/api/v2/pokemon/${props.match.params.pokename}`)
             .then(response => response.json())
-            .then(pokemon => this.setState({ pokemon }))
+            .then(pokemon => this.setState({ pokemon }, () => console.log(pokemon)))
     }
 
     componentWillReceiveProps(nextProps){
